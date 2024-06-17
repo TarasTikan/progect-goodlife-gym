@@ -3,60 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,600;1,600&family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
-      <a href="">Good<span>life</span></a>
+    <header class="header">
+      <div class="container-header">
+      <a href="" class="header-logo"
+        >Good<span class="header-logo-span">life</span></a
+      >
       <nav>
-        <ul>
-          <li><a href="">Classess</a></li>
-          <li><a href="">Timetable</a></li>
-          <li><a href="">Clubs</a></li>
-          <li><a href="">Nutrition</a></li>
-          <li><a href="">Free Trial</a></li>
-          <li><a href="">Search</a></li>
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a href="" class="header-link">Classess</a>
+          </li>
+          <li class="header-list-item">
+            <a href="" class="header-link">Timetable</a>
+          </li>
+          <li class="header-list-item">
+            <a href="" class="header-link">Clubs</a>
+          </li>
+          <li class="header-list-item">
+            <a href="" class="header-link">Nutrition</a>
+          </li>
+          <li class="header-list-item">
+            <a href="" class="header-link">Free Trial</a>
+          </li>
+          <li class="header-list-item">
+            <a href="" class="header-link">Search</a>
+          </li>
         </ul>
       </nav>
-      <button type="button">Login</button>
+      <button type="button" class="header-btn">Login</button>
+      </div>
     </header>
     <main>
-      <section>
-        <div>
-          <h1>Welcome to Goodlyfe Gyms</h1>
-          <button type="button">See the benefits</button>
+      <section class="hero">
+        <div class="container-hero">
+          <h1 class="hero-title">
+            Welcome to <br/> Good<span class="hero-title-span">lyfe</span> Gyms
+          </h1>
+          <button type="button" class="hero-btn">See the benefits</button>
         </div>
       </section>
-      <section>
-        <div>
-          <ul>
-            <li>
+      <section class="body">
+        <div class="body-container">
+          <ul class="body-list">
+            <li class="body-item">
               <img
                 src="./img/male lifting weights-min.jpeg"
                 width="347"
                 height="399"
                 alt="hand"
+                class="body-img"
               />
             </li>
-            <li>
+            <li class="body-item">
               <img
                 src="./img/female doing situps-min.jpeg"
                 width="241"
                 height="359"
                 alt="women"
+                class="body-img"
               />
             </li>
           </ul>
-          <div>
-            <h1>Meet your new body</h1>
-            <p>
+          <div class="wrap-body-text">
+            <h1 class="body-title">Meet your new body</h1>
+            <p class="body-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
               gravida nec felis. Sed id egestasegestas risus, ut imperdiet
               augue.
             </p>
-            <button type="button">View the FAQ</button>
+            <button type="button" class="body-btn">View the FAQ</button>
           </div>
         </div>
       </section>
