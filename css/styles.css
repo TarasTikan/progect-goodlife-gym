@@ -162,6 +162,13 @@ body {
 
 .body-list {
   list-style: none;
+  position: relative;
+}
+
+.body-img-woman {
+position: absolute;
+right: -92px;
+top:150px;
 }
 
 .wrap-body-text {
@@ -301,6 +308,12 @@ body {
 
 .facilities-list {
   list-style: none;
+  position: relative;
+}
+
+.facilities-img-strong {
+  position: absolute;
+  bottom:-240px;
 }
 
 /* .facilities-item {
