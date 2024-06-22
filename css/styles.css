@@ -271,6 +271,7 @@ top:150px;
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
+    position: relative;
 }
 
 .wrap-facilities-text {
@@ -308,12 +309,15 @@ top:150px;
 
 .facilities-list {
   list-style: none;
+}
+.facilities-img {
+  z-index: 1;
   position: relative;
 }
-
 .facilities-img-strong {
   position: absolute;
-  bottom:-240px;
+  top: 154px;
+  right: 15px;
 }
 
 /* .facilities-item {
@@ -327,8 +331,13 @@ top:150px;
 /* ----------------------------comment--------------------------- */
 
 .comment {
-  padding-bottom: 81px;
+  padding-bottom: 230px;
   padding-top: 126px;
+  background-image: linear-gradient(
+  to bottom,
+  var(--first-title-color),
+    #F4E3E9
+);
 }
 
 .container-comment {
@@ -337,12 +346,16 @@ top:150px;
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+   position: relative;
 }
 
 .wrap-comment-text {
   display: flex;
   gap: 12px;
+  width: 413px;
   flex-direction: column;
+  margin-bottom: 27px;
 }
 
 .comment-title {
@@ -363,6 +376,7 @@ top:150px;
   list-style: none;
   display: flex;
   gap: 33px;
+  padding-left: 97px;
 }
 
 .comment-item {
@@ -375,6 +389,18 @@ top:150px;
   padding-right: 32px;
 }
 
+.comment-item:nth-child(2) {
+position: absolute;
+top: 484px;
+right: 106px;
+}
+
+.comment-item:nth-child(3) {
+  height: 378px;
+  position: absolute;
+  bottom: 201px;
+  right: 106px;
+}
 .card-title {
   font-size: 38px;
   font-weight: 600;
@@ -446,7 +472,7 @@ top:150px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* display: flex; */
+  display: flex;
 }
 
 .wrap-info-mobile {
@@ -479,6 +505,11 @@ top:150px;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 3px;
   margin-bottom: 9px;
+}
+
+.mobile-list {
+  display: flex;
+  list-style: none;
 }
 
 /* --------------------social---------------------------- */
