@@ -1,0 +1,43 @@
+.hero {
+    padding-top: 241px;
+    padding-bottom: 202px;
+    background-color: var(--second-title-color);
+    background-image: linear-gradient(rgba(45, 40, 36, 0.2),
+            rgba(45, 40, 36, 0.2)),
+        url("../img/cathy-pham-3jAN9InapQI-unsplash-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0px;
+    color: var(--first-title-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-title-span {
+    color: var(--span-title-color);
+}
+
+.container-hero {
+    width: 1393px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-btn {
+    width: 237px;
+    height: 56px;
+    background-color: var(--second-title-color);
+    color: var(--first-title-color);
+    border-radius: 38.5px;
+    border: none;
+}

@@ -1,0 +1,48 @@
+.health {
+    padding-top: 231px;
+    padding-bottom: 247px;
+    background-color: var(--second-title-color);
+    background-image: linear-gradient(rgba(57, 57, 57, 0.22),
+            rgba(57, 57, 57, 0.22)),
+        url("../img/womandoingsitups-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-health {
+    width: 880px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.health-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90px;
+    color: var(--first-title-color);
+}
+
+.health-text {
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    color: var(--first-title-color);
+    width: 420px;
+    margin: 0 auto;
+}
+
+.health-btn {
+    width: 237px;
+    height: 68px;
+    background-color: var(--second-title-color);
+    color: var(--first-title-color);
+    border-radius: 38.5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    border: none;
+    margin-top: 65px;
+}

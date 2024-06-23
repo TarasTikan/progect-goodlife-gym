@@ -1,0 +1,125 @@
+.footer {
+    padding-top: 96px;
+    padding-bottom: 163px;
+    background-color: rgb(11, 13, 23);
+}
+
+.container-footer {
+    width: 1137px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.wrap-footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 255px;
+    margin-right: 40px;
+}
+
+.footer-logo {
+    font-size: 25.67px;
+    font-weight: 800;
+    line-height: 109.5%;
+    color: var(--first-title-color);
+}
+
+.sub-logo {
+    color: var(--second-title-color);
+}
+
+.social-text {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.list-footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.list-footer-item {
+    width: 24px;
+    height: 24px;
+    background-color: var(--first-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.link-icon-social {
+    fill: var(--first-title-color);
+}
+
+.wrap-quick-footer {
+    margin-right: 46px;
+    width: 245px;
+}
+
+.wrap-guides-footer {
+    margin-right: 31px;
+    width: 245px;
+}
+
+.title-info-footer {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--first-title-color);
+    margin-bottom: 24px;
+}
+
+.list-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-info {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.title-contacts {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--first-title-color);
+    margin-bottom: 24px;
+}
+
+.list-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.link-contacts {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    fill: var(--second-title-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrap-contacts {
+    width: 245px;
+}

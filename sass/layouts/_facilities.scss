@@ -1,0 +1,61 @@
+.facilities {
+    padding-top: 224px;
+    padding-bottom: 264px;
+}
+
+.container-facilities {
+    width: 1236px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.wrap-facilities-text {
+    margin-right: 145px;
+}
+
+.facilities-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--second-title-color);
+    margin-bottom: 4px;
+}
+
+.facilities-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 37px;
+    color: var(--first-text-color);
+    width: 489px;
+}
+
+.facilities-btn {
+    width: 237px;
+    height: 68px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    color: var(--second-title-color);
+    border: 2px solid var(--second-title-color);
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 38.5px;
+}
+
+.facilities-list {
+    list-style: none;
+}
+
+.facilities-img {
+    z-index: 1;
+    position: relative;
+}
+
+.facilities-img-strong {
+    position: absolute;
+    top: 154px;
+    right: 15px;
+}
