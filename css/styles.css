@@ -473,6 +473,7 @@ right: 106px;
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
+  position: relative;
 }
 
 .wrap-info-mobile {
@@ -512,9 +513,23 @@ right: 106px;
   list-style: none;
 }
 
+.img-app {
+  position: absolute;
+     right: 313px;
+     bottom: 31px;
+}
+
+.img-app:nth-child(2) {
+   position: absolute;
+   right: 100px;
+   top: 49px;
+}
+
 /* --------------------social---------------------------- */
 
 .social {
+  position: relative;
+  z-index: 1;
   padding-top: 64px;
   padding-bottom: 67px;
   background-color: rgb(237, 237, 237);
