@@ -7,15 +7,15 @@
         url("../img/womandoingsitups-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    .container-health {
+        width: 880px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
-.container-health {
-    width: 880px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
-    text-align: center;
-}
 
 .health-title {
     font-size: 60px;
