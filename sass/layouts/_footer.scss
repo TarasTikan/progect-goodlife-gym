@@ -1,13 +1,23 @@
 .footer {
-  padding-top: 96px;
-  padding-bottom: 163px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   background-color: rgb(11, 13, 23);
+        @include dekstop {
+     padding-top: 96px;
+     padding-bottom: 163px;
+    }
   .container-footer {
-    width: 1137px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
     margin: 0 auto;
+    @include mobile {
+      width: 285px;
+    }
+    @include dekstop {
+      width: 1137px;
+      display: flex;
+    }
   }
 }
 
@@ -16,7 +26,10 @@
   flex-direction: column;
   gap: 24px;
   width: 255px;
+  margin-bottom: 42px;
+      @include dekstop {
   margin-right: 40px;
+    }
 }
 
 .footer-logo {
@@ -57,13 +70,20 @@
 }
 
 .wrap-quick-footer {
-  margin-right: 46px;
+  margin-bottom: 308px;
   width: 245px;
+       @include dekstop {
+  margin-right: 46px;
+    }
 }
 
 .wrap-guides-footer {
   margin-right: 31px;
   width: 245px;
+  display: none;
+       @include dekstop {
+display: block;
+    }
 }
 
 .title-info-footer {
