@@ -1,61 +1,98 @@
 .facilities {
+  padding-top: 74px;
+  padding-bottom: 39px;
+  @include dekstop {
     padding-top: 224px;
     padding-bottom: 264px;
-    .container-facilities {
-        width: 1236px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0 auto;
-        display: flex;
-        position: relative;
+  }
+  .container-facilities {
+    width: 306px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    @include dekstop {
+      width: 1236px;
+      flex-direction: row;
     }
+  }
 }
-
 
 .wrap-facilities-text {
+  margin-top: 115px;
+  @include dekstop {
     margin-right: 145px;
-    .facilities-title {
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 60px;
-        color: var(--second-title-color);
-        margin-bottom: 4px;
+  }
+  .facilities-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--second-title-color);
+    margin-bottom: 13px;
+    @include dekstop {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 4px;
     }
-    
-    .facilities-text {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 37px;
-        color: var(--first-text-color);
-        width: 489px;
+  }
+
+  .facilities-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--first-text-color);
+    width: 272px;
+    @include dekstop {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 37px;
+      width: 489px;
     }
-    .facilities-btn {
-        width: 237px;
-        height: 68px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 37px;
-        color: var(--second-title-color);
-        border: 2px solid var(--second-title-color);
-        margin-top: 20px;
-        background-color: transparent;
-        border-radius: 38.5px;
+  }
+  .facilities-btn {
+    width: 288px;
+    height: 63px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 37px;
+    color: var(--second-title-color);
+    border: 2px solid var(--second-title-color);
+    margin-top: 44px;
+    background-color: transparent;
+    border-radius: 38.5px;
+    @include dekstop {
+      font-weight: 600;
+      width: 237px;
+      height: 68px;
+      margin-top: 20px;
     }
+  }
 }
 
-
-
 .facilities-list {
-    list-style: none;
+  list-style: none;
 }
 
 .facilities-img {
-    z-index: 1;
-    position: relative;
+  z-index: 1;
+  position: relative;
+  max-width: 75%;
+  @include dekstop {
+    max-width: 100%;
+  }
 }
 
 .facilities-img-strong {
-    position: absolute;
+  position: absolute;
+  top: 63px;
+  right: 0px;
+  max-width: 75%;
+  @include dekstop {
     top: 154px;
     right: 15px;
+    max-width: 100%;
+  }
 }

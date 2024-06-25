@@ -2,10 +2,10 @@
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: rgb(11, 13, 23);
-        @include dekstop {
-     padding-top: 96px;
-     padding-bottom: 163px;
-    }
+  @include dekstop {
+    padding-top: 96px;
+    padding-bottom: 163px;
+  }
   .container-footer {
     width: 100%;
     padding-left: 15px;
@@ -27,9 +27,9 @@
   gap: 24px;
   width: 255px;
   margin-bottom: 42px;
-      @include dekstop {
-  margin-right: 40px;
-    }
+  @include dekstop {
+    margin-right: 40px;
+  }
 }
 
 .footer-logo {
@@ -72,18 +72,18 @@
 .wrap-quick-footer {
   margin-bottom: 308px;
   width: 245px;
-       @include dekstop {
-  margin-right: 46px;
-    }
+  @include dekstop {
+    margin-right: 46px;
+  }
 }
 
 .wrap-guides-footer {
   margin-right: 31px;
   width: 245px;
   display: none;
-       @include dekstop {
-display: block;
-    }
+  @include dekstop {
+    display: block;
+  }
 }
 
 .title-info-footer {

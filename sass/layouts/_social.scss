@@ -8,14 +8,11 @@
     padding-top: 60px;
   }
   .container-social {
-    width: 100%;
+     width: 305px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     text-align: center;
-    @include mobile {
-      width: 305px;
-    }
     @include dekstop {
       width: 540px;
     }

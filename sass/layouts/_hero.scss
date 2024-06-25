@@ -1,43 +1,71 @@
 .hero {
-  padding-top: 241px;
-  padding-bottom: 202px;
+  padding-top: 103px;
+  padding-bottom: 166px;
   background-color: var(--second-title-color);
   background-image: linear-gradient(
       rgba(45, 40, 36, 0.2),
       rgba(45, 40, 36, 0.2)
     ),
-    url("../img/cathy-pham-3jAN9InapQI-unsplash-min.jpg");
+    url("/img/mob-bg-hero.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  @include dekstop {
+    background-image: linear-gradient(
+        rgba(45, 40, 36, 0.2),
+        rgba(45, 40, 36, 0.2)
+      ),
+      url("/img/cathy-pham-3jAN9InapQI-unsplash-min.jpg");
+    padding-top: 241px;
+    padding-bottom: 202px;
+  }
   .container-hero {
-    width: 1393px;
+    width: 309px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+    @include dekstop {
+      width: 1393px;
+    }
   }
 }
 
 .hero-title {
-  font-size: 70px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 110%;
+  line-height: 36px;
   letter-spacing: 0px;
   color: var(--first-title-color);
   text-align: center;
   margin-bottom: 20px;
   &-span {
-    color: var(--span-title-color);
+    color: var(--first-title-color);
+    @include dekstop {
+      color: var(--span-title-color);
+    }
+  }
+  @include dekstop {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 110%;
   }
 }
 
 .hero-btn {
-  width: 237px;
+  width: 208px;
   height: 56px;
   background-color: var(--second-title-color);
   color: var(--first-title-color);
   border-radius: 38.5px;
   border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 37px;
+  @include dekstop {
+    width: 237px;
+    height: 56px;
+  }
 }
