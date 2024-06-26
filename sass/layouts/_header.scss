@@ -1,14 +1,28 @@
 .header {
-  padding-top: 30px;
-  padding-bottom: 26px;
+  padding-top: 20px;
+  padding-bottom: 16px;
   background-color: var(--second-title-color);
+  @include dekstop {
+    padding-top: 30px;
+    padding-bottom: 26px;
+  }
   .container-header {
-    width: 1393px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    @include dekstop {
+      width: 1393px;
+    }
+  }
+}
+
+.navigation {
+  display: none;
+  @include dekstop {
+    display: block;
   }
 }
 
@@ -31,15 +45,18 @@
 }
 
 .header-logo {
-  font-size: 40px;
+  font-size: 21.82px;
   font-weight: 800;
   line-height: 109.5%;
   letter-spacing: 0px;
   color: var(--first-title-color);
   text-decoration: none;
-  margin-right: 172px;
+  margin-right: auto;
   &-span {
     color: var(--span-title-color);
+  }
+  @include dekstop {
+    font-size: 40px;
   }
 }
 
@@ -61,4 +78,85 @@
   text-align: center;
   color: var(--second-title-color);
   margin-left: 37px;
+  display: none;
+  @include dekstop {
+    display: block;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mob-container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.mob-menu-navigation {
+}
+.mob-list {
+  list-style: none;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+.mob-item {
+}
+.mob-menu-link {
+  color: var(--second-title-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 109.5%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mob-log-btn {
+  width: 288px;
+  height: 63px;
+  border-radius: 200px;
+  color: var(--first-title-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 109.5%;
+  text-align: center;
+  background-color: var(--second-title-color);
+}
+
+
+.list-mob-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+  .list-mob-item {
+    width: 50px;
+    height: 50px;
+    background-color: var(--second-title-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+.link-icon-social {
+  fill: var(--first-title-color);
 }

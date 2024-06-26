@@ -56,6 +56,7 @@
     line-height: 48px;
     color: var(--second-title-color);
     margin-bottom: 11px;
+    width: 261px;
     @include dekstop {
       font-size: 40px;
       font-weight: 700;
@@ -80,16 +81,16 @@
     border: 2px solid var(--second-title-color);
     border-radius: 38.5px;
     color: var(--second-title-color);
-    width: 237px;
-    height: 68px;
+    width: 287px;
+    height: 60px;
     background-color: transparent;
     font-size: 16px;
     font-weight: 600;
     line-height: 37px;
     margin-top: 54px;
     @include dekstop {
-      width: 287px;
-      height: 60px;
+      width: 237px;
+      height: 68px;
       margin-top: 30px;
     }
   }

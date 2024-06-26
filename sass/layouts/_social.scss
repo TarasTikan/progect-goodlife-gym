@@ -1,11 +1,11 @@
 .social {
-  position: relative;
-  z-index: 1;
   padding-top: 44px;
   padding-bottom: 67px;
   background-color: rgb(237, 237, 237);
   @include dekstop {
     padding-top: 60px;
+    position: relative;
+    z-index: 1;
   }
   .container-social {
     width: 305px;

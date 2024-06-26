@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +25,7 @@
         <a href="" class="header-logo"
           >Good<span class="header-logo-span">life</span></a
         >
-        <nav>
+        <nav class="navigation">
           <ul class="header-list">
             <li class="header-list-item">
               <a href="" class="header-link">Classess</a>
@@ -51,7 +50,67 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="header-btn">Login</button>
+        <button type="button" class="header-btn">
+          <svg class="header-search-icon" width="20" height="20">
+            <use href="./img/icons.svg#icon-search-Icon"></use>
+          </svg>
+        </button>
+        <button type="button" class="menu-open-btn">O</button>
+      </div>
+      <div class="mob-menu">
+        <div class="mob-container">
+          <button type="button" class="menu-close-btn">x</button>
+          <nav class="mob-menu-navigation">
+            <ul class="mob-list">
+              <li class="mob-item">
+                <a href="" class="mob-menu-link">Classess</a>
+              </li>
+              <li class="mob-item">
+                <a href="" class="mob-menu-link">Timetable</a>
+              </li>
+              <li class="mob-item">
+                <a href="" class="mob-menu-link">Clubs</a>
+              </li>
+              <li class="mob-item">
+                <a href="" class="mob-menu-link">Nutrition</a>
+              </li>
+              <li class="mob-item">
+                <a href="" class="mob-menu-link">Free Trial</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="mob-log-btn">Login</button>
+             <ul class="list-mob-social">
+            <li class="list-mob-item">
+              <a href="/" class="link-icon-social">
+                <svg class="social-icon-footer" width="16" height="16">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-mob-item">
+              <a href="/" class="link-icon-social">
+                <svg class="social-icon-footer" width="16" height="16">
+                  <use href="./img/icons.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-mob-item">
+              <a href="/" class="link-icon-social">
+                <svg class="social-icon-footer" width="16" height="16">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-mob-item">
+              <a href="/" class="link-icon-social">
+                <svg class="social-icon-footer" width="16" height="16">
+                  <use href="./img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -68,22 +127,50 @@
         <div class="container-body">
           <ul class="body-list">
             <li class="body-item">
-              <img
-                src="./img/male lifting weights-min.jpeg"
-                width="347"
-                height="399"
-                alt="hand"
-                class="body-img"
-              />
+              <picture>
+                <source
+                  srcset="./img/male lifting weights-min.jpeg 1x, ./img/strong-2px-min.jpg 2x"
+                  media="(min-width:1000px)"
+                />
+                <source
+                  srcset="
+                    ./img/strong-mob-min         1x,
+                    ./img/strong-mob-2px-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  srcset="./img/male lifting weights-min.jpeg 1x, ./img/strong-2px-min.jpg 2x"
+                  src="./img/male lifting weights-min.jpeg"
+                  width="347"
+                  height="399"
+                  alt="hand"
+                  class="body-img"
+                />
+              </picture>
             </li>
             <li class="body-item">
-              <img
-                src="./img/female doing situps-min.jpeg"
-                width="241"
-                height="359"
-                alt="women"
-                class="body-img-woman"
-              />
+              <picture>
+                <source
+                  srcset="./img/female doing situps-min.jpeg 1x, ./img/woman-2px-min.jpg 2x"
+                  media="(min-width:1000px)"
+                />
+                <source
+                  srcset="
+                    ./img/woman-mob-min          1x,
+                    ./img/wooman-mob-2px-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  srcset="./img/female doing situps-min.jpeg 1x, ./img/woman-2px-min.jpg 2x"
+                  src="./img/female doing situps-min.jpeg"
+                  width="241"
+                  height="359"
+                  alt="women"
+                  class="body-img-woman"
+                />
+              </picture>
             </li>
           </ul>
           <div class="wrap-body-text">
@@ -122,22 +209,56 @@
           </div>
           <ul class="facilities-list">
             <li class="facilities-item">
-              <img
-                src="./img/Gym Room-min.jpeg"
-                alt="gym"
-                class="facilities-img"
-                width="444"
-                height="296"
-              />
+              <picture>
+                <source
+                  srcset="./img/Gym Room-min.jpeg 1x, ./img/gymroom-2px-min.jpg 2x"
+                  media="(min-width:1000px)"
+                />
+                <source
+                  srcset="
+                    ./img/gymroom-mob-2px-min 1x,
+                    ./img/gymroom-mob-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  srcset="./img/Gym Room-min.jpeg 1x, ./img/gymroom-2px-min.jpg 2x"
+                  src="./img/Gym Room-min.jpeg"
+                  alt="gym"
+                  class="facilities-img"
+                  width="444"
+                  height="296"
+                />
+              </picture>
             </li>
             <li class="facilities-item">
-              <img
-                src="./img/Weights-min.jpeg"
-                alt="weights"
-                class="facilities-img-strong"
-                width="422"
-                height="281"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/Weights-min.jpeg    1x,
+                    ./img/weights-2px-min.jpg 2x
+                  "
+                  media="(min-width:1000px)"
+                />
+                <source
+                  srcset="
+                    ./img/weights-mob-min.jpeg    1x,
+                    ./img/weights-mob-2px-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  srcset="
+                    ./img/Weights-min.jpeg     1x,
+                    ./img/weights-2px-min.jpeg 2x
+                  "
+                  src="./img/Weights-min.jpeg"
+                  alt="weights"
+                  class="facilities-img-strong"
+                  width="422"
+                  height="281"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -249,18 +370,43 @@
               </li>
             </ul>
           </div>
-          <img
-            src="./img/phone2.png"
-            alt="mobile phone"
-            width="232"
-            class="img-app"
-          />
-          <img
-            src="./img/phone1.png"
-            alt="mobile phone"
-            width="232"
-            class="img-app"
-          />
+          <picture>
+            <source
+              srcset="./img/phone2.png 1x, ./img/phone2-2px-min.png 2x"
+              media="(min-width:1000px)"
+            />
+            <source
+              srcset="
+                ./img/phone2-mob-min.png     1x,
+                ./img/phone2-mob-2px-min.png 2x
+              "
+              media="(min-width:320px)"
+            />
+            <img
+              srcset="./img/phone2.png 1x, ./img/phone2-2px-min.png 2x"
+              src="./img/phone2.png"
+              alt="mobile phone"
+              width="232"
+              class="img-app-phone2"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./img/phone1.png 1x, ./img/phone1-2px-min.png 2x"
+              media="(min-width:1000px)"
+            />
+            <source
+              srcset="./img/phone1-min.png 1x, ./img/phone1-mob-2px-min.png 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              srcset="./img/phone1.png 1x, ./img/phone1-2px-min.png 2x"
+              src="./img/phone1.png"
+              alt="mobile phone"
+              width="232"
+              class="img-app-phone1"
+            />
+          </picture>
         </div>
       </section>
       <section class="social">
@@ -378,22 +524,22 @@
               <li class="contacts-item">
                 <a href="" class="link-contacts"
                   ><svg class="contacts-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-message"></use>
-                    </svg>admin@goodlyfe.co</a
+                    <use href="./img/icons.svg#icon-message"></use></svg
+                  >admin@goodlyfe.co</a
                 >
               </li>
               <li class="contacts-item">
                 <a href="" class="link-contacts">
                   <svg class="contacts-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-phone"></use>
-                    </svg>+88 98765 43210</a
+                    <use href="./img/icons.svg#icon-phone"></use></svg
+                  >+88 98765 43210</a
                 >
               </li>
               <li class="contacts-item">
                 <a href="" class="link-contacts">
                   <svg class="contacts-icon" width="24" height="24">
-                    <use href="./img/icons.svg#icon-location"></use>
-                    </svg >90210 Beverly Hills California USA</a
+                    <use href="./img/icons.svg#icon-location"></use></svg
+                  >90210 Beverly Hills California USA</a
                 >
               </li>
             </ul>

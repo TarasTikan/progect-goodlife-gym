@@ -15,14 +15,14 @@
         rgba(57, 57, 57, 0.22),
         rgba(57, 57, 57, 0.22)
       ),
-      url("/img/body-mob-2p-min.jpg");
+      url("../../img/body-mob-2p-min.jpg");
   }
   @include dekstop {
     background-image: linear-gradient(
         rgba(57, 57, 57, 0.22),
         rgba(57, 57, 57, 0.22)
       ),
-      url("/img/womandoingsitups-min.jpg");
+      url("../../img/womandoingsitups-min.jpg");
     padding-top: 231px;
     padding-bottom: 247px;
     @include retina {
@@ -30,7 +30,7 @@
           rgba(57, 57, 57, 0.22),
           rgba(57, 57, 57, 0.22)
         ),
-        url("/img/body-2px-min.jpg");
+        url("../../img/body-2px-min.jpg");
     }
   }
   .container-health {

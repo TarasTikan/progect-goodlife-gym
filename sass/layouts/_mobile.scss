@@ -4,7 +4,7 @@
   background-color: var(--second-title-color);
   @include dekstop {
     padding-top: 112px;
-      padding-bottom: 76px;
+    padding-bottom: 76px;
   }
   .container-mobile {
     width: 317px;
@@ -16,7 +16,7 @@
     position: relative;
     @include dekstop {
       width: 1090px;
-          flex-direction: row;
+      flex-direction: row;
     }
   }
 }
@@ -51,7 +51,7 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 37px;
-          width: 489px;
+      width: 489px;
     }
   }
   .mobile-download {
@@ -62,7 +62,7 @@
     margin-top: 25px;
     margin-bottom: 9px;
     @include dekstop {
-          margin-top: 40px;
+      margin-top: 40px;
     }
   }
 }
@@ -78,23 +78,22 @@
   list-style: none;
 }
 
-.img-app {
+.img-app-phone1 {
   position: absolute;
-  right: 85px;
-  bottom: -450px;
-  //    right: 313px;
-  // bottom: 64px;
-    @include dekstop {
-        right: 313px;
-  bottom: 64px;
-    }
-  &:nth-child(2) {
-    position: absolute;
-       right: -119px;
-    top: 600px;
-    @include dekstop {
-     right: 100px;
+  right: 93px;
+  bottom: -413px;
+  @include dekstop {
+    right: 313px;
+    bottom: 64px;
+  }
+}
+
+.img-app-phone2 {
+  position: absolute;
+  right: -104px;
+  top: 543px;
+  @include dekstop {
+    right: 100px;
     top: 49px;
-    }
   }
 }
