@@ -14,8 +14,4 @@ function toggleMenu() {
   body.classList.toggle("no-scroll");
 }
 
-function removeMenu() {
-  mobMenu.classList.add("visually-hidden");
-  body.classList.add("no-scroll");
-}
 })()
