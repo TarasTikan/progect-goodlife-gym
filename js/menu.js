@@ -1,9 +1,10 @@
-const btnMenu = document.querySelector(".menu-open-btn");
+const btnOpenMenu = document.querySelector(".menu-open-btn");
 const btnClouseMenu = document.querySelector(".menu-close-btn");
+const mobMenu = document.querySelector(".mob-menu");
 
+btnOpenMenu.addEventListener("click", toggleMenu);
+btnClouseMenu.addEventListener("click", toggleMenu);
 
-btnMenu.addEventListener('click', openMenu)
-function openMenu() {
-btnMenu.classList.toggle('.is-Open')
-btnClouseMenu.classList.toggle(".is-Open");
+function toggleMenu() {
+  mobMenu.classList.toggle("visually-hidden");
 }
