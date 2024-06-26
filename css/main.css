@@ -129,11 +129,19 @@ body {
   color: var(--second-title-color);
   margin-left: 37px;
   display: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1000px) {
   .header-btn {
     display: block;
   }
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .mob-menu {
@@ -175,6 +183,13 @@ body {
 
 .icon-btn-close {
   fill: #000;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-btn-close:hover,
+.icon-btn-close:focus {
+  fill: var(--second-title-color);
 }
 
 .menu-open-btn {
@@ -215,6 +230,14 @@ body {
   line-height: 109.5%;
   text-align: center;
   background-color: var(--second-title-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-log-btn:hover,
+.mob-log-btn:focus {
+  background-color: transparent;
+  border: 2px solid var(--second-title-color);
+  color: var(--second-title-color);
 }
 
 .list-mob-social {
@@ -313,12 +336,21 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 37px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1000px) {
   .hero-btn {
     width: 237px;
     height: 56px;
   }
+}
+
+.hero-btn:hover {
+  background-color: rgb(190, 40, 94);
+}
+
+.hero-btn:focus {
+  border: 8px solid rgb(255, 218, 231);
 }
 
 .body {
@@ -426,6 +458,7 @@ body {
   font-weight: 600;
   line-height: 37px;
   margin-top: 54px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1000px) {
   .wrap-body-text .body-btn {
@@ -433,6 +466,15 @@ body {
     height: 68px;
     margin-top: 30px;
   }
+}
+
+.body-btn:hover {
+  background: rgb(190, 40, 94);
+  color: white;
+}
+
+.body-btn:focus {
+  border: 8px solid rgb(255, 218, 231);
 }
 
 .health {
@@ -519,6 +561,15 @@ body {
   line-height: 37px;
   border: none;
   margin-top: 35px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.health-btn:hover {
+  background-color: rgb(190, 40, 94);
+}
+
+.health-btn:focus {
+  border: 8px solid rgb(255, 218, 231);
 }
 
 .facilities {
@@ -596,6 +647,7 @@ body {
   margin-top: 44px;
   background-color: transparent;
   border-radius: 38.5px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1000px) {
   .wrap-facilities-text .facilities-btn {
@@ -604,6 +656,15 @@ body {
     height: 68px;
     margin-top: 20px;
   }
+}
+
+.facilities-btn:hover {
+  background: rgb(190, 40, 94);
+  color: white;
+}
+
+.facilities-btn:focus {
+  border: 8px solid rgb(255, 218, 231);
 }
 
 .facilities-list {
@@ -1028,6 +1089,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1000px) {
   .social-list .social-item {
@@ -1038,6 +1100,15 @@ body {
 
 .social-btn {
   fill: var(--second-title-color);
+}
+
+.social-item:hover {
+  background-color: rgb(190, 40, 94);
+  fill: #fff;
+}
+
+.social-item:focus {
+  border: 8px solid rgb(255, 218, 231);
 }
 
 .footer {
