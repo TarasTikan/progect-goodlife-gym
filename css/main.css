@@ -160,9 +160,31 @@ body {
 }
 
 .menu-close-btn {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-bottom: 30px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.icon-btn-menu {
+  fill: #fff;
+}
+
+.icon-btn-close {
+  fill: #000;
+}
+
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .mob-list {

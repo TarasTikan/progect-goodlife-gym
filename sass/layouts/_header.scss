@@ -107,20 +107,35 @@
   justify-content: space-between;
 }
 .menu-close-btn {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-bottom: 30px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
-.mob-menu-navigation {
+.icon-btn-menu {
+fill: #fff;
 }
+.icon-btn-close {
+  fill: #000;
+}
+.menu-open-btn {
+   background-color: transparent;
+   border: none;
+@include dekstop {
+  display: none;
+}
+}
+
 .mob-list {
   list-style: none;
   gap: 24px;
   display: flex;
   flex-direction: column;
 }
-.mob-item {
-}
+
 .mob-menu-link {
   color: var(--second-title-color);
   font-size: 16px;
