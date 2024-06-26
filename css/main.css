@@ -241,7 +241,7 @@ body {
   padding-top: 103px;
   padding-bottom: 166px;
   background-color: var(--second-title-color);
-  background-image: linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)), url("../../img/mob-bg-hero.jpg");
+  background-image: linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)), url("../../img/mob-bg-hero.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
