@@ -439,7 +439,7 @@ body {
   padding-top: 75px;
   padding-bottom: 82px;
   background-color: var(--second-title-color);
-  background-image: linear-gradient(rgba(57, 57, 57, 0.22), rgba(57, 57, 57, 0.22)), url("../../img/body-mob-bg.jpg");
+  background-image: linear-gradient(rgba(57, 57, 57, 0.22), rgba(57, 57, 57, 0.22)), url("../../img/body-mob-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
