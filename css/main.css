@@ -43,6 +43,10 @@ body {
   margin: -1px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 16px;
