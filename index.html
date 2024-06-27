@@ -17,6 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -51,61 +56,66 @@
           </ul>
         </nav>
         <button type="button" class="header-btn">login</button>
-        <button type="button" class="menu-open-btn"> <svg class="icon-btn-menu" width="30" height="30">
-                <use href="./img/icons.svg#icon-menu"></use>
-              </svg></button>
+        <button type="button" class="menu-open-btn">
+          <svg class="icon-btn-menu" width="30" height="30">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      <div class="mob-menu visually-hidden ">
+      <div class="mob-menu visually-hidden">
         <div class="mob-container">
           <div class="mob-menu-top">
-          <button type="button" class="menu-close-btn"><svg class="icon-btn-close" width="15" height="15">
+            <button type="button" class="menu-close-btn">
+              <svg class="icon-btn-close" width="15" height="15">
                 <use href="./img/icons.svg#icon-close"></use>
-              </svg></button>
-          <nav class="mob-menu-navigation">
-            <ul class="mob-list">
-              <li class="mob-item">
-                <a href="" class="mob-menu-link">Classess</a>
-              </li>
-              <li class="mob-item">
-                <a href="" class="mob-menu-link">Timetable</a>
-              </li>
-              <li class="mob-item">
-                <a href="" class="mob-menu-link">Clubs</a>
-              </li>
-              <li class="mob-item">
-                <a href="" class="mob-menu-link">Nutrition</a>
-              </li>
-              <li class="mob-item">
-                <a href="" class="mob-menu-link">Free Trial</a>
-              </li>
-            </ul>
-          </nav>
+              </svg>
+            </button>
+            <nav class="mob-menu-navigation">
+              <ul class="mob-list">
+                <li class="mob-item">
+                  <a href="" class="mob-menu-link">Classess</a>
+                </li>
+                <li class="mob-item">
+                  <a href="" class="mob-menu-link">Timetable</a>
+                </li>
+                <li class="mob-item">
+                  <a href="" class="mob-menu-link">Clubs</a>
+                </li>
+                <li class="mob-item">
+                  <a href="" class="mob-menu-link">Nutrition</a>
+                </li>
+                <li class="mob-item">
+                  <a href="" class="mob-menu-link">Free Trial</a>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div>
-          <button type="button" class="mob-log-btn">Login</button>
-             <ul class="list-mob-social">
-            <li class="list-mob-item">
-              <a href="/" class="link-icon-social">
-                <svg class="social-icon-footer" width="16" height="16">
-                  <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-mob-item">
-              <a href="/" class="link-icon-social">
-                <svg class="social-icon-footer" width="16" height="16">
-                  <use href="./img/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-mob-item">
-              <a href="/" class="link-icon-social">
-                <svg class="social-icon-footer" width="16" height="16">
-                  <use href="./img/icons.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <button type="button" class="mob-log-btn">Login</button>
+            <ul class="list-mob-social">
+              <li class="list-mob-item">
+                <a href="/" class="link-icon-social">
+                  <svg class="social-icon-footer" width="16" height="16">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-mob-item">
+                <a href="/" class="link-icon-social">
+                  <svg class="social-icon-footer" width="16" height="16">
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-mob-item">
+                <a href="/" class="link-icon-social">
+                  <svg class="social-icon-footer" width="16" height="16">
+                    <use href="./img/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -130,7 +140,7 @@
                 />
                 <source
                   srcset="
-                    ./img/strong-mob-min.jpg 1x,
+                    ./img/strong-mob-min.jpg     1x,
                     ./img/strong-mob-2px-min.jpg 2x
                   "
                   media="(min-width:320px)"
@@ -153,7 +163,7 @@
                 />
                 <source
                   srcset="
-                    ./img/woman-mob-min.jpg 1x,
+                    ./img/woman-mob-min.jpg      1x,
                     ./img/wooman-mob-2px-min.jpg 2x
                   "
                   media="(min-width:320px)"
@@ -213,7 +223,7 @@
                 <source
                   srcset="
                     ./img/gymroom-mob-2px-min.jpg 1x,
-                    ./img/gymroom-mob-min.jpg 2x
+                    ./img/gymroom-mob-min.jpg     2x
                   "
                   media="(min-width:320px)"
                 />
@@ -231,24 +241,24 @@
               <picture>
                 <source
                   srcset="
-                    ./img/Weights-min.jpg    1x,
+                    ./img/weights-min.jpeg    1x,
                     ./img/weights-2px-min.jpg 2x
                   "
                   media="(min-width:1000px)"
                 />
                 <source
                   srcset="
-                    ./img/weights-mob-min.jpg    1x,
+                    ./img/weights-mob-min.jpeg    1x,
                     ./img/weights-mob-2px-min.jpg 2x
                   "
                   media="(min-width:320px)"
                 />
                 <img
                   srcset="
-                    ./img/Weights-min.jpeg     1x,
+                    ./img/Weights-min.jpeg    1x,
                     ./img/weights-2px-min.jpg 2x
                   "
-                  src="./img/Weights-min.jpeg"
+                  src="./img/weights-min.jpeg"
                   alt="weights"
                   class="facilities-img-strong"
                   width="422"
@@ -265,77 +275,81 @@
             <h2 class="comment-title">Real Stories from Real Customers</h2>
             <p class="comment-text">Be inspired with these experiences.</p>
           </div>
-          <ul class="comment-list">
-            <li class="comment-item">
-              <h3 class="card-title">3Kg lost!</h3>
-              <div class="wrap-text">
-                <p class="koma">"</p>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vivamus eget lectus urna. Nulla magna tortor, bibendum in
-                  molestie sed, gravida nec felis. Sed id egestasegestas risu.
-                </p>
-              </div>
-              <div class="wrap-user">
-                <img
-                  src="./img/image 5-min.jpeg"
-                  alt=""
-                  width="59"
-                  height="57"
-                  class="user-img"
-                />
-                <div class="wrap-info-user">
-                  <p class="user-name">James John</p>
-                  <p class="user-descrip">Mother of two</p>
+          <div class="comment-list swiper">
+            <div class="swiper-wrapper">
+              <div class="comment-item swiper-slide">
+                <h3 class="card-title">3Kg lost!</h3>
+                <div class="wrap-text">
+                  <p class="koma">"</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus eget lectus urna. Nulla magna tortor, bibendum in
+                    molestie sed, gravida nec felis. Sed id egestasegestas risu.
+                  </p>
+                </div>
+                <div class="wrap-user">
+                  <img
+                    src="./img/image 5-min.jpeg"
+                    alt=""
+                    width="59"
+                    height="57"
+                    class="user-img"
+                  />
+                  <div class="wrap-info-user">
+                    <p class="user-name">James John</p>
+                    <p class="user-descrip">Mother of two</p>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="comment-item">
-              <h3 class="card-title">43Kg lost!</h3>
-              <div class="wrap-text">
-                <p class="koma">"</p>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div class="wrap-user">
-                <img
-                  src="./img/joseph-gonzalez-iFgRcqHznqg-unsplash-min.jpg"
-                  alt=""
-                  width="59"
-                  height="57"
-                  class="user-img"
-                />
-                <div class="wrap-info-user">
-                  <p class="user-name">Robert Micheal</p>
-                  <p class="user-descrip">Mother of two</p>
+              <div class="comment-item swiper-slide">
+                <h3 class="card-title">43Kg lost!</h3>
+                <div class="wrap-text">
+                  <p class="koma">"</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="wrap-user">
+                  <img
+                    src="./img/joseph-gonzalez-iFgRcqHznqg-unsplash-min.jpg"
+                    alt=""
+                    width="59"
+                    height="57"
+                    class="user-img"
+                  />
+                  <div class="wrap-info-user">
+                    <p class="user-name">Robert Micheal</p>
+                    <p class="user-descrip">Mother of two</p>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="comment-item">
-              <h3 class="card-title">17Kg lost!</h3>
-              <div class="wrap-text">
-                <p class="koma">"</p>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vivamus eget lectus urna. Nulla magna tortor, bibendum in mo.
-                </p>
-              </div>
-              <div class="wrap-user">
-                <img
-                  src="./img/christopher-campbell-rDEOVtE7vOs-unsplash-min.jpg"
-                  alt=""
-                  width="59"
-                  height="57"
-                  class="user-img"
-                />
-                <div class="wrap-info-user">
-                  <p class="user-name">Mary Patricia</p>
-                  <p class="user-descrip">Mother of two</p>
+              <div class="comment-item swiper-slide">
+                <h3 class="card-title">17Kg lost!</h3>
+                <div class="wrap-text">
+                  <p class="koma">"</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus eget lectus urna. Nulla magna tortor, bibendum in
+                    mo.
+                  </p>
+                </div>
+                <div class="wrap-user">
+                  <img
+                    src="./img/christopher-campbell-rDEOVtE7vOs-unsplash-min.jpg"
+                    alt=""
+                    width="59"
+                    height="57"
+                    class="user-img"
+                  />
+                  <div class="wrap-info-user">
+                    <p class="user-name">Mary Patricia</p>
+                    <p class="user-descrip">Mother of two</p>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
       <section class="mobile">
@@ -392,7 +406,10 @@
               media="(min-width:1000px)"
             />
             <source
-              srcset="./img/phone1-min.png 1x, ./img/phone1-mob-2px-min.png 2x"
+              srcset="
+                ./img/phone1-mob-min.png     1x,
+                ./img/phone1-mob-2px-min.png 2x
+              "
               media="(min-width:320px)"
             />
             <img
@@ -536,6 +553,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/swiper.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>
