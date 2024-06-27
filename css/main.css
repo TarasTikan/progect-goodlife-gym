@@ -276,14 +276,14 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .hero {
-    background-image: linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)), url("../../img/cathy-pham-3jAN9InapQI-unsplash-min.jpeg");
+    background-image: linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)), url("../../img/cathy-pham-3jAN9InapQI-unsplash-min.jpg");
     padding-top: 241px;
     padding-bottom: 202px;
   }
 }
 @media screen and (min-width: 1000px) and (min-device-pixel-ratio: 2), screen and (min-width: 1000px) and (min-resolution: 192dpi), screen and (min-width: 1000px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)), url("../../img/herp-2px-min.jpeg");
+    background-image: linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)), url("../../img/herp-2px-min.jpg");
   }
 }
 .hero .container-hero {
